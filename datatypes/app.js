@@ -1,6 +1,8 @@
-let ainepunktid = Number(prompt("Sisestage ainepunktide arv:"))
-let nadalad = Number(prompt("Sisestage nädalate arv:"))
+let inimesed = 100
+let kohtiBussis = 50
 
-let tunnid = ainepunktid * 26;
-let nadalasToimetan = tunnid / nadalad;
-console.log("Ühe nädala eeldatav ajakulu:" + Math.round(nadalasToimetan) + " tundi.")
+let bussidTaidetud = Math.floor(inimesed / kohtiBussis)
+let mahaJaanud = inimesed % kohtiBussis
+
+console.log(inimesed + " inimese sõidutamiseks läheb vaja " + bussidTaidetud + " bussi ja " + mahaJaanud + " inimest on jäänud maha")
+
