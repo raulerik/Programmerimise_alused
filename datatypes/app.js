@@ -16,3 +16,5 @@ console.log(numberOne+numberTwo);
 console.log("Hello World!");
 console.log("second row");
 console.log("third row");
+
+console.log("Tere, maailm!");
