@@ -1,8 +1,8 @@
-let inimesed = 100
-let kohtiBussis = 50
+let temperatuur = prompt("Sisesta õhutemperatuur")
 
-let bussidTaidetud = Math.floor(inimesed / kohtiBussis)
-let mahaJaanud = inimesed % kohtiBussis
-
-console.log(inimesed + " inimese sõidutamiseks läheb vaja " + bussidTaidetud + " bussi ja " + mahaJaanud + " inimest on jäänud maha")
+if (temperatuur > 4.0) {
+    console.log("Ei ole jäätumise ohtu")
+} else {
+    console.log("On jäätumise oht")
+}
 
