@@ -1,14 +1,17 @@
 // kasutaja sisend
-let kordamise_arv = Number(prompt("Sisestage mitu korda äratada"));
+let ringideArv = Number(prompt("Sisesta ringide arv"));
+let porgandidKokku = 0;
 
-let kord = 1;
+let ring = 1;
+while(ring <= ringideArv){
 
-// korduvad tegevused
-
-while(kord <= kordamise_arv){
-    console.log(`Tõuse ja sära - ${kord}. kord`)
-        kord++
+    if (ring % 2 == 0){
+        porgandidKokku = porgandidKokku + ring
+    }
+    ring++
 }
+
+console.log(`Porgandite koguarv on ${porgandidKokku}.`)
 
 
 
