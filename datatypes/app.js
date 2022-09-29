@@ -1,10 +1,15 @@
 // kasutaja sisend
-let taringuteArv = Number(prompt("Täringute arv"));
+let poialpoisid = Number(prompt("Mitu pöialpoissi tahab õunu?"));
 
-for (let kord = 1; kord <= taringuteArv; kord++){
-    let taring = Math.ceil(Math.random() * 6)
-    console.log(taring)
+let lumivalgekeOunad = 14
+let poialpoiss = 1;
+while(poialpoiss <= poialpoisid){
+    let ounad = Math.ceil(Math.random() * 2)
+    console.log(ounad)
+    lumivalgekeOunad = lumivalgekeOunad - ounad
+    poialpoiss++
 }
+console.log(`Lumivalgekesele jäi ${lumivalgekeOunad}`)
 
 
 
